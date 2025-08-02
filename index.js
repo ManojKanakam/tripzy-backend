@@ -70,7 +70,7 @@ app.post('/api/check-availability', (req, res) => {
   
   // Count bookings for this date
   const bookingsForDate = bookings.filter(b => b.date === date).length;
-  const available = bookingsForDate < 5; // 5 van limit
+  const available = bookingsForDate < 5;
   
   res.json({ 
     available, 
@@ -83,6 +83,7 @@ app.post('/api/check-availability', (req, res) => {
 // Create booking
 app.post('/api/bookings', (req, res) => {
   const { tripId, userName, userEmail, date } = req.body;
+
   
   // Find trip
   const trip = trips.find(t => t.id === parseInt(tripId));
@@ -110,6 +111,9 @@ app.post('/api/bookings', (req, res) => {
   };
   
   bookings.push(newBooking);
+
+  console.log("Booking stored in backend:");
+  console.log(bookings);
   
   res.json({ 
     message: 'Booking created successfully',
@@ -121,6 +125,7 @@ app.post('/api/bookings', (req, res) => {
 app.get('/api/bookings', (req, res) => {
   res.json(bookings);
 });
+
 
 // Get booking by ID  
 app.get('/api/bookings/:id', (req, res) => {
