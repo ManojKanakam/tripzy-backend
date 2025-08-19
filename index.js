@@ -19,7 +19,7 @@ const trips = [
     id: 1,
     title: "Mountain Adventure",
     description: "Explore scenic mountain trails and enjoy breathtaking views. Perfect for nature lovers and adventure seekers.",
-    price: 299,
+    price: 2999,
     duration: "3 days",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
   },
@@ -27,7 +27,7 @@ const trips = [
     id: 2,
     title: "Beach Paradise",
     description: "Relax on pristine beaches and enjoy water sports. Includes surfing lessons and beachside dining.",
-    price: 249,
+    price: 2499,
     duration: "2 days",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400"
   },
@@ -35,7 +35,7 @@ const trips = [
     id: 3,
     title: "City Explorer",
     description: "Discover urban attractions, museums, and local cuisine. Perfect for culture enthusiasts.",
-    price: 199,
+    price: 1999,
     duration: "1 day",
     image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400"
   },
@@ -43,7 +43,7 @@ const trips = [
     id: 4,
     title: "Forest Retreat",
     description: "Immerse yourself in tranquil forests with hiking trails and wildlife spotting opportunities.",
-    price: 349,
+    price: 3499,
     duration: "4 days",
     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400"
   },
@@ -51,7 +51,7 @@ const trips = [
     id: 5,
     title: "Desert Safari",
     description: "Experience the magic of desert landscapes with camel rides and stargazing sessions.",
-    price: 399,
+    price: 3999,
     duration: "3 days",
     image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=400"
   }
